@@ -102,7 +102,7 @@ def publish(hexo_path, push_branch, article_zip_path, log):
 
 
     # clean extract files
-    shutil.rmtree(extract_path)
+    #shutil.rmtree(extract_path)
 
     # commit
     #git_commit_and_push(hexo_path, push_branch, log)

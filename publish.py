@@ -67,9 +67,10 @@ def publish(hexo_path, push_branch, article_zip_path, log):
     asset_paths = []
     for root, dirs, files in os.walk(extract_path):
         for filename in files:
-            # check
+            # check filter invisible and non md extension files
             name, ext = os.path.splitext(filename)
             if ext != '.md': continue
+            if name.startswith('.'): continue
 
             # find article
             names.append(name)

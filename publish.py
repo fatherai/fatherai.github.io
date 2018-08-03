@@ -105,10 +105,10 @@ def publish(hexo_path, push_branch, article_zip_path, log):
     shutil.rmtree(extract_path)
 
     # commit
-    git_commit_and_push(hexo_path, push_branch, log)
+    #git_commit_and_push(hexo_path, push_branch, log)
 
     # deploy
-    deploy(hexo_path)
+    #deploy(hexo_path)
 
 
 
